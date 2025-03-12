@@ -1,9 +1,9 @@
 FROM python:3
 
 WORKDIR /usr/src/app
-COPY dev-requirements.txt ./
+COPY requirements.txt ./
 
-RUN pip install --no-cache-dir --upgrade -r ./dev-requirements.txt
+RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
 EXPOSE 3001
 
